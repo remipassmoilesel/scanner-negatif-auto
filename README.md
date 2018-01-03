@@ -29,4 +29,8 @@ Dimensions RPI:
 
 	85,60 mm × 53,98 mm × 17 mm (B+)
 
+Servomoteur à rotation continue:
+
+	https://www.gotronic.fr/art-servomoteur-s4315r-20804.html
+	https://www.lextronic.fr/servomoteurs/1223-servomoteur-hitec-a-rotation-continue.html
 
