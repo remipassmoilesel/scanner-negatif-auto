@@ -8,10 +8,10 @@
 ## Problèmes: 
 
 	Les bandes de négatifs sont coupées en segments de 6 photographies.
+	Solution: les rassembler sur deux bandes papiers parrallèles en rouleau ? (une de chaque coté des négatifs)
 
-	> 13 mm de chaque coté de la bande de 35 mm disponibles.
-
-	Démonter le scanner ? Enlever le capot ?
+	> 13 mm de chaque coté de la bande de 35 mm disponibles max. sur le proscan.
+	> beaucoup plus sur le Epson si le support de négatif est remplacé par une plaque adaptée.
 
 ## Pistes possibles:
 
