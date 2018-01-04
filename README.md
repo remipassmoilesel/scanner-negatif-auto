@@ -11,13 +11,13 @@
 	Solution: les rassembler sur deux bandes papiers parrallèles en rouleau ? (une de chaque coté des négatifs)
 
 	> 13 mm de chaque coté de la bande de 35 mm disponibles max. sur le proscan.
-	> beaucoup plus sur le Epson si le support de négatif est remplacé par une plaque adaptée.
+	> Beaucoup plus d'espace sur le Epson si le support de négatif est remplacé par une plaque adaptée.
 
 ## Pistes possibles:
 
 	Chassis en bois
 	Servo moteur contrôlés avec un Rasperry pi
-	Entrainement des négatifs: rouleau caoutchouté ?
+	Bandes de négatifs collées sur du papier ? Agrafées ? Utilisation de fil ?
 
 ## Ressources:
 
