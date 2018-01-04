@@ -13,6 +13,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
+        # TODO: test with a GPIO stub
         if self.path == FORWARD_ONE_STRIP:
             self._set_headers()
             print('Going forward for one strip ...')
