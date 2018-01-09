@@ -6,6 +6,12 @@ import autopy3
 import keyboard
 
 
+class RecordType:
+    Click = 'Click'
+    Move = 'Move'
+    Key = 'Key'
+
+
 def print_banner():
     print('')
     print('===============================================================================================')
@@ -14,29 +20,34 @@ def print_banner():
     print('')
 
 
-SCENARIO = []
+json_data = []
 
 # TODO: use globals()
 continue_loop = True
 
 
 def watch_mouse_position():
+    global continue_loop
+    global json_data
+
     while continue_loop:
         mouse_pos = autopy3.mouse.get_pos()
-        print(mouse_pos)
-        SCENARIO.append(mouse_pos)
+        register_position(RecordType.Move, mouse_pos)
         time.sleep(0.6)
 
 
 def stop_loop():
+    global continue_loop
+
     print('Stop and export')
     continue_loop = False
 
 
 def on_new_click():
+    global json_data
+
     mouse_pos = autopy3.mouse.get_pos()
-    print('Click=', mouse_pos)
-    SCENARIO.append('Click=' + str(mouse_pos[0]) + ',' + str(mouse_pos[1]))
+    register_position(RecordType.Click, mouse_pos)
 
 
 def register_hot_keys():
@@ -45,8 +56,16 @@ def register_hot_keys():
 
 
 def export_json():
+    global json_data
+
     f = open('scenario.json', 'w')
-    json.dumps(SCENARIO, f)
+    json.dump(json_data, f)
+
+
+def register_position(prefix, pos):
+    pos_str = [prefix, pos[0], pos[1]]
+    print(pos_str)
+    json_data.append(pos_str)
 
 
 if __name__ == "__main__":
