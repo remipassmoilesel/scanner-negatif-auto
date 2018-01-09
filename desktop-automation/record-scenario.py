@@ -6,6 +6,8 @@ import autopy3
 import keyboard
 
 
+# TODO: watch keys ?
+
 class RecordType:
     Click = 'Click'
     Move = 'Move'
@@ -22,7 +24,6 @@ def print_banner():
 
 json_data = []
 
-# TODO: use globals()
 continue_loop = True
 
 
